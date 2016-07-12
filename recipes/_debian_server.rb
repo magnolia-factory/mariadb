@@ -77,6 +77,6 @@ execute 'preseed mariadb-server' do
   action :nothing
 end
 
-package "mariadb-server-#{node['mariadb']['install']['version']}" do
+package "mariadb-server" do
   action :install
 end
